@@ -1,0 +1,27 @@
+{% extends 'base.html.twig'%}
+{% block title %}
+    <h1 class="title">Les martines</h1>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="container">
+            {% for article in variableArray %}
+                <div class="article">
+                    <a href=" {{ path ('articleShow' , {'id' : article.id}) }} ">
+                    <div class="titre">
+                        <h2>{{ article.titre }}</h2>
+                    </div>
+                    <div class="imgContainer">
+                        <img class="img" src="{{ article.image }}" alt="martine">
+                    </div>
+                    <div class="contenu">
+                        <p>{{ article.contenu }}</p>
+                    </div>
+
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}

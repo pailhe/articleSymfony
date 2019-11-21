@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    <h1 class="title">{{ variableArray.titre }}</h1>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="container">
+                <div class="article">
+                        <div class="titre">
+                            <h2>{{ variableArray.titre }}</h2>
+                            <div class="imgContainer">
+                                <img class="img" src="{{ variableArray.image }}" alt="martine">
+                            </div>
+                            <div class="contenu">
+                                <p>{{ variableArray.contenu }}</p>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </main>
+{% endblock %}

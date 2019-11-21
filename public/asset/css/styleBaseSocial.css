@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    height: 10vh;
+    background-color: #5eb5e0;
+
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside{
+    height:80vh;
+    background-color: #5eb5e0;
+    width: 20%;
+}
+
+footer{
+    height: 10vh;
+    background-color: #5eb5e0;
+}
